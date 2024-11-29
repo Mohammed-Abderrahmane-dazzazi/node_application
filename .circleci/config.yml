@@ -20,9 +20,9 @@ jobs:
       - run:
           name: Build Docker image
           command: |
-            docker build -t blog-node -t mad101/blog-node:latest .
-            echo $DOCKER_PASSWORD | docker login -u mad101 --password-stdin
-            docker push mad101/blog-node:latest
+            docker build -t node_application -t mad101/node_application:latest .
+            echo "tMDCX7Y7R/gKwwi" | docker login -u "mad101" --password-stdin
+            docker push mad101/node_application:latest
 
 workflows:
   version: 2
