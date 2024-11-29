@@ -12,7 +12,7 @@ jobs:
  build_docker_image:
   docker:
    - image: circleci/node:12
-  steps:
+   steps:
     - checkout
     - setup_remote_docker: 
         docker_layer_caching: false
